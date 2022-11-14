@@ -9,10 +9,8 @@ namespace PizzaV5.Controllers
         public IActionResult Index()
         {
 
-            foreach (PizzaSecurity in PizzaModels)
-
-
             PizzaModel pizzaModel = new PizzaModel();
+
             pizzaModel.Id = 1;
             pizzaModel.PizzaName = "Pepperoni";
             pizzaModel.PizzaSize = 18;
