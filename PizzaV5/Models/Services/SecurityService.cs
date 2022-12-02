@@ -3,7 +3,7 @@
     public class SecurityService
     {
 
-        usersDAO usersDAO = new usersDAO();
+        UsersDAO usersDAO = new UsersDAO();
         
         public SecurityService()
         {
