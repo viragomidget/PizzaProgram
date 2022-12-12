@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PizzaV5.Models.PizzaModel>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+This is to set up a PizzaModel - which contains the pizza descriptions, PizzaModel
+It is then PizzaControllerStatic - This creates a list with some data in it.
+This page then pulls that data in (from the model, and displays it)
